@@ -36,6 +36,10 @@ class MainActivity : AppCompatActivity() {
         if (mode == 0) {
             button.setText(R.string.btns)
         } else if (mode == 1) {
+            if (!isMyServiceRunning(ZekrService::class.java)) {
+                val mServiceIntent = Intent(this, ZekrService::class.java)
+                startService(mServiceIntent)
+            }
             button.setText(R.string.btne)
         }
         button.setOnClickListener {
