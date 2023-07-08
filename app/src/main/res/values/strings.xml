@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">أَذْكَار الْمُسْلِم</string>
+    <string name="btns">إبدء</string>
+    <string name="btne">إيقاف</string>
+    <string name="t1">يَا حَيُّ يَا قيُّومُ بِرَحْمَتِكَ أسْتَغِيثُ</string>
+    <string name="t2">اللَّهُمَّ صَلِّ وَسَلِّمْ على نَبِيِّنَا مُحمَّد</string>
+    <string name="t3">أسْتَغْفِرُ اللهَ وَأتُوبُ إلَيْهِ</string>
+    <string name="t4">سُبْحـانَ اللهِ وَبِحَمْـدِهِ</string>
+    <string name="t6">لا إله إلّا الله</string>
+    <string name="t7">رَّبِّ زِدْنِي عِلْمًا</string>
+    <string name="t8">يا مقلِّبَ القلوبِ ثبِّت قلبي على دينِكَ</string>
+    <string name="t9">لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ</string>
+    <string name="t10">اللَّهُمَّ إني أسألُكَ الهُدَى والتُّقَى وَالعَفَافَ وَالغِنَى</string>
+    <string name="t11">اللَّهُمَّ إني أسألُكَ الهُدَى وَالسَّداد</string>
+    <string name="t12">اللَّهُمَّ ألْهِمْنِي رُشْدِي، وَأعِذْنِي مِنْ شَرّ نَفْسِي</string>
+    <string name="t13">لَا إلَه إلّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ</string>
+    <string name="t14">سُبْحـانَ اللهِ وَبِحَمْـدِهِ</string>
+    <string name="t15">لا حَوْلَ وَلا قُوَّةَ إِلا باللَّهِ</string>
+    <string name="t16">سْبْحْآنْ آلْلْه</string>
+</resources>
