@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         val type = preferences.getInt("type",0)
         radioGroup.check(if(type==0)R.id.radioButtonVoice else R.id.radioButtonText)
         preferences.edit().putInt("type",type).apply()
+        Type.type=type
         if (mode == 0) {
             button.setText(R.string.btns)
         } else if (mode == 1) {
