@@ -17,4 +17,7 @@
     <string name="t14">سُبْحـانَ اللهِ وَبِحَمْـدِهِ</string>
     <string name="t15">لا حَوْلَ وَلا قُوَّةَ إِلا باللَّهِ</string>
     <string name="t16">سْبْحْآنْ آلْلْه</string>
+    <string name="voice">صوتي</string>
+    <string name="text">نصي</string>
+    <string name="reminder_type">نوع التذكير</string>
 </resources>

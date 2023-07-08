@@ -9,14 +9,11 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.PixelFormat
-import android.hardware.display.VirtualDisplay
 import android.media.MediaPlayer
 import android.os.Build
 import android.os.Handler
-import android.os.HandlerThread
 import android.os.IBinder
 import android.os.Looper
-import android.os.Message
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
@@ -26,8 +23,6 @@ import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
 import androidx.core.view.isVisible
-import androidx.core.view.marginTop
-import kotlinx.coroutines.MainScope
 import java.util.Random
 import java.util.Timer
 import java.util.TimerTask
@@ -35,9 +30,8 @@ import java.util.TimerTask
 class ZekrService : Service() {
     private val sounds = IntArray(25)
     private val texts = IntArray(15)
-    lateinit var messageLayout:View
+    private lateinit var messageLayout:View
     var isSet = false
-    private var turn = 1
     override fun onCreate() {
         super.onCreate()
         sounds[0] = R.raw.i2
@@ -136,19 +130,18 @@ class ZekrService : Service() {
         timer = Timer()
         timerTask = object : TimerTask() {
             override fun run() {
-                if(turn ==0)
+
+                if(Type.type ==0)
                 {
-                    turn=1
                     playPlayer()
-                }else{
-                    turn = 0
+                }else if(Type.type==1){
                     Handler(Looper.getMainLooper()).post {
                         showOnScreen()
                     }
                 }
             }
         }
-        timer?.schedule(timerTask, (1000 * 60 * 1).toLong(), (1000 * 60 * 1).toLong()) //
+        timer?.schedule(timerTask, (1000 * 60 * 5).toLong(), (1000 * 60 * 5).toLong()) //
     }
     fun playPlayer()
     {
